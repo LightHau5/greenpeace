@@ -1,0 +1,456 @@
+#ad {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 250px;
+    border: 1px solid #013750;
+    background-color: #1d5b87;
+
+    margin: auto;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    overflow: hidden;
+}
+
+#stage {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 250px;
+    opacity:1;
+}
+
+
+
+#clickthrough {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.tuna {
+    position: absolute;
+    width: 80px;
+    height: 33px;
+    opacity: 1;
+    background-image: url("tuna.png");
+}
+
+
+.shark {
+    position: absolute;
+    width: 110px;
+    height: 53px;
+    opacity: 1;
+    background-image: url("shark.png");
+}
+
+.turtle {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    opacity: 1;
+    background-image: url("turtle.png");
+}
+
+.stingray {
+    position: absolute;
+    width: 70px;
+    height: 65px;
+    opacity: 1;
+    background-image: url("stingray.png");
+}
+
+#logo {
+    position: absolute;
+    z-index:240;
+    width: 300px;
+    height: 52px;
+    opacity: 0;
+    background-image: url("Greenpeace_logo.png");
+}
+
+#bg {
+    position: absolute;
+    z-index:230;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-image: url("background_endframe.png");
+}
+
+
+#introtxt01 {
+    position: absolute;
+    z-index:85;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-image: url("introtxt_01.png");
+
+}
+
+#introtxt02 {
+    position: absolute;
+    z-index:85;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-image: url("introtxt_02.png");
+
+}
+
+#introtxt03 {
+    position: absolute;
+    z-index:85;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-image: url("introtxt_03.png");
+
+}
+
+#txt01 {
+    position: absolute;
+    z-index:85;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-image: url("txt_01.png");
+
+}
+
+#txt02 {
+    position: absolute;
+    z-index:225;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-image: url("txt_02.png");
+
+}
+
+#trawler {
+    display: block;
+    background:transparent url(trawler_seq.png) 0 0 no-repeat;
+    z-index:200;
+    width: 400px;
+    height: 750px;
+    top:-500px;
+    left:-200px;
+    opacity: 1;
+    -webkit-animation: boat .5s steps(3) infinite;
+    -moz-animation: boat .5s steps(3) infinite;
+    
+}
+
+#trawlerContainer {
+    position: absolute;
+    z-index:210;
+    top: -250px;
+    left: -200px;
+    width: 400px;
+    height: 250px;
+    opacity:1;
+    overflow: hidden;
+}
+
+#blank {
+  position: absolute;
+  z-index:195;
+  top:-500px;
+  left:-200px;
+  width: 500px;
+  height: 300px;
+  background-color: #1d5b87;
+}
+
+
+#cta{
+  /*display: block;*/
+  position: absolute;
+  background-image: url("cta.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 300;
+  width:170px;
+  height:25px;
+  border-radius: 150px; 
+  top: 200px;
+  left:65px; 
+  opacity:0;
+  background-color: #4fbf23;
+  cursor: pointer;
+}
+#cta:hover{
+    background-color: #3d931b;
+}
+
+
+
+.tuna01 {
+  top:50px;
+  z-index:110;
+      /*-webkit-animation-name: tunaLeft;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;*/
+
+    /* animation shorthand*/
+
+    -webkit-animation: tunaLeft 5s linear infinite;
+    -moz-animation: tunaLeft 5s linear infinite;
+
+}
+
+.tuna02 {
+  top:150px;
+  z-index:100;
+  -webkit-animation: tunaRight 7s linear -3s infinite backwards;
+  -moz-animation: tunaRight 7s linear -3s infinite backwards;
+  
+}
+
+.tuna03 {
+  top:100px;
+  z-index:100;
+  -webkit-animation: tunaRight 5s linear -3s infinite backwards;
+  -moz-animation: tunaRight 5s linear -3s infinite backwards;
+  
+}
+
+.tuna04 {
+  top:180px;
+  z-index:100;
+  -webkit-animation: tunaLeft 6s linear -4s infinite backwards;
+  -moz-animation: tunaLeft 6s linear -4s infinite backwards;
+  
+}
+
+.shark01 {
+  top:50px;
+  z-index:80;
+  -webkit-animation: sharkLeft 10s linear -4s infinite backwards;
+  -moz-animation: sharkLeft 10s linear -4s infinite backwards;
+}
+
+.shark02 {
+  top:70px;
+  z-index:90;
+  -webkit-animation: sharkRight 8s linear -1s infinite backwards;
+  -moz-animation: sharkRight 8s linear -1s infinite backwards;
+}
+
+.ray01 {
+  z-index:50;
+  -webkit-animation: rayLeft 12s linear -8s infinite backwards;
+  -moz-animation: rayLeft 12s linear -8s infinite backwards;
+}
+
+.ray02 {
+  z-index:60;
+  -webkit-animation: rayRight 8s linear infinite;
+  -moz-animation: rayRight 8s linear infinite;
+}
+
+
+.turtle01 {
+  z-index:70;
+  -webkit-animation: turtleLeft 10s linear infinite;
+  -moz-animation: turtleLeft 10s linear infinite;
+
+}
+
+.turtle02 {
+  z-index:85;
+  -webkit-animation: turtleRight 12s linear -10s infinite backwards;
+  -moz-animation: turtleRight 12s linear -10s infinite backwards;
+}
+
+
+.fadeIn{
+  /*-webkit-animation-name: fadeIn;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    */
+  -webkit-animation: fadeIn .5s ease-in 0s 1 normal forwards;
+  -moz-animation: fadeIn .5s ease-in 0s 1 normal forwards; 
+}
+
+.fadeOut{
+
+  -webkit-animation: fadeOut .5s ease-in 0s 1 normal forwards;
+  -moz-animation: fadeOut .5s ease-in 0s 1 normal forwards;
+}
+
+
+.fishing{
+  -webkit-animation: fishing 8s linear 0s 1 normal forwards;
+  -moz-animation: fishing 8s linear 0s 1 normal forwards;
+}
+
+
+
+
+
+/*  Tuna Animations  */
+
+@-webkit-keyframes tunaLeft{
+  from{-webkit-transform:translateX(-250px);}
+  to{-webkit-transform:translateX(400px);}
+}
+
+@-webkit-keyframes tunaRight{
+  from{-webkit-transform:translateX(400px) scaleX(-1);}
+  to{-webkit-transform:translateX(-300px) scaleX(-1);}
+}
+
+
+@-moz-keyframes tunaLeft{
+  from{-moz-transform:translateX(-250px);}
+  to{-moz-transform:translateX(400px);}
+}
+
+@-moz-keyframes tunaRight{
+  from{-moz-transform:translateX(400px) scaleX(-1);}
+  to{-moz-transform:translateX(-300px) scaleX(-1);}
+}
+
+/*  Shark Animations  */
+
+@-webkit-keyframes sharkLeft{
+  from{-webkit-transform:translateX(-250px) translateY(50px) scaleX(-1);}
+  to{-webkit-transform:translateX(400px) translateY(100px) scaleX(-1);}
+}
+
+@-webkit-keyframes sharkRight{
+  from{-webkit-transform:translateX(400px) translateY(0px) rotate(0deg);}
+  to{-webkit-transform:translateX(-300px) translateY(200px) rotate(-20deg);}
+}
+
+@-moz-keyframes sharkLeft{
+  from{-moz-transform:translateX(-250px) translateY(50px) scaleX(-1);}
+  to{-moz-transform:translateX(400px) translateY(100px) scaleX(-1);}
+}
+
+@-moz-keyframes sharkRight{
+  from{-moz-transform:translateX(400px) translateY(0px) rotate(0deg);}
+  to{-moz-transform:translateX(-300px) translateY(200px) rotate(-20deg);}
+}
+
+
+/*  Stingray Animations  */
+
+@-webkit-keyframes rayLeft{
+  from{-webkit-transform:translateX(-50px) translateY(350px) scaleX(-1);}
+  to{-webkit-transform:translateX(100px) translateY(-100px) scaleX(-1);}
+}
+
+@-webkit-keyframes rayRight{
+  from{-webkit-transform:translateX(200px) translateY(350px) rotate(90deg);}
+  to{-webkit-transform:translateX(100px) translateY(-150px) rotate(-20deg);}
+}
+
+@-moz-keyframes rayLeft{
+  from{-moz-transform:translateX(-50px) translateY(350px) scaleX(-1);}
+  to{-moz-transform:translateX(100px) translateY(-100px) scaleX(-1);}
+}
+
+@-moz-keyframes rayRight{
+  from{-moz-transform:translateX(200px) translateY(350px) rotate(90deg);}
+  to{-moz-transform:translateX(100px) translateY(-150px) rotate(-20deg);}
+}
+
+
+/*  Turtle Animations  */
+
+@-webkit-keyframes turtleLeft{
+  from{-webkit-transform:translateX(-70px) translateY(350px) rotate(45deg);}
+  to{-webkit-transform:translateX(150px) translateY(-50px) rotate(0deg);}
+}
+
+@-webkit-keyframes turtleRight{
+  from{-webkit-transform:translateX(350px) translateY(100px) rotate(-90deg);}
+  to{-webkit-transform:translateX(-50px) translateY(80px) rotate(-145deg);}
+}
+
+@-moz-keyframes turtleLeft{
+  from{-moz-transform:translateX(-70px) translateY(350px) rotate(45deg);}
+  to{-moz-transform:translateX(150px) translateY(-50px) rotate(0deg);}
+}
+
+@-moz-keyframes turtleRight{
+  from{-moz-transform:translateX(350px) translateY(100px) rotate(-90deg);}
+  to{-moz-transform:translateX(-50px) translateY(80px) rotate(-145deg);}
+}
+
+
+/*  FadeIn  */
+
+@-webkit-keyframes fadeIn{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+
+@-moz-keyframes fadeIn{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+
+
+/*  Fade Out  */
+
+
+@-webkit-keyframes fadeOut {
+  from{ opacity:1; }
+  to{ opacity:0; }
+}
+
+@-moz-keyframes fadeOut {
+  from{ opacity:1; }
+  to{ opacity:0; }
+}
+
+/*  Trawler  */
+
+@-webkit-keyframes fishing {
+  from{-webkit-transform:translateX(0px) translateY(0px);}
+  to{-webkit-transform:translateX(200px) translateY(500px);}
+}
+
+@-moz-keyframes fishing {
+  from{-moz-transform:translateX(0px) translateY(0px);}
+  to{-moz-transform:translateX(200px) translateY(500px);}
+}
+
+
+@-webkit-keyframes boat {
+   0% {background-position: 0 0; } 
+   100% {background-position: 0 -750px; } /* Must be full height of sprite or skipping will happen.*/
+}
+
+@-moz-keyframes boat {
+   0% {background-position: 0 0; } 
+   100% {background-position: 0 -750px; } /* Must be full height of sprite or skipping will happen.*/
+}
+
+/*.boatMove {
+  top:-250px;
+  z-index:100;
+  -webkit-animation: fishing 6s linear 0 normal forwards;
+  -moz-animation: fishing 6s linear 0 normal forwards;
+  
+}*/
+
+
